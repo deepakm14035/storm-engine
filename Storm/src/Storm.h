@@ -1,4 +1,5 @@
 #pragma once
 
 #include "Storm/Application.h"
-#include "Storm/EntryPoint.h"
+#include "EntryPoint.h"
+#include "Storm/Log.h"

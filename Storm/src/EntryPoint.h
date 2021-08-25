@@ -2,11 +2,16 @@
 
 #ifdef ST_PLATFORM_WINDOWS
 
+#include "Storm/Log.h"
+
 extern Storm::Application* Storm::CreateApplication();
 
-void main() {
+void main(int argc, char** argv) {
+
 	//Storm::Print();
-	auto sandbox = Storm::CreateApplication(); 
+	Storm::Log::Init();
+	ST_CORE_WARN("client error!!");
+	auto sandbox = Storm::CreateApplication();
 	sandbox->Run();
 	delete sandbox;
 
